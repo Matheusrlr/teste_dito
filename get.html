@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+      
+
+      $(document).ready(function (){
+
+        $.ajax({
+          type: "GET",
+          url: "https://storage.googleapis.com/dito-questions/events.json",
+          success: function(data){
+            resposta = data.events
+            for(i in resposta){
+              product_data = resposta[i].custom_data;
+
+              $("#resposta").append(
+                `<div id="evento_${i}"> 
+                  <h3>Evento ${i}</h3> 
+                  <div>
+                    <p> ${resposta[i].event} </p>
+                    <p> ${resposta[i].timestamp.toString().split('T')[0]} </p>
+                    <div id="produto_${i}"> </div>
+                  </div>
+                </div>`
+              )
+              for(j in product_data){
+                $(`#produto_${i}`).append(`
+                  <p> ${ product_data[j].value } </p>
+                `)
+              }
+            }
+          }
+        });
+      });
+    
+    
+    </script>
+  </head>
+  <body>
+    <div id="resposta"></div>
+  </body>
+</html>
