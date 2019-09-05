@@ -1,0 +1,20 @@
+.info{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product_price span{
+  font-weight: bold;
+}
+.product_price{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.value{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
