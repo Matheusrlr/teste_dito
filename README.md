@@ -8,9 +8,13 @@ Foi utilizado a biblioteca jQuery para a interação com o HTML e o AJAX para fa
 # Tecnologias utilizadas.
 
 Jquery
+
 AJAX
+
 Javascript
+
 CSS
+
 HTML
 
 
