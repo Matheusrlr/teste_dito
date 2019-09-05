@@ -87,23 +87,27 @@ $(document).ready(function (){
               <div class="content">
                 <div class="inside">
                   <div class="info">
-                    <div id="date_${c}">${dateString}</div>
-                    <div id="hora_${c}">${hora}</div>
-                    <div id="local_${c}"></div>
-                    <div id="preco_${c}"></div>
+                    <div id="date_${c}"><img src="icons/calendar.svg" alt="" width="12px"/> ${dateString}</div>
+                    <div id="hora_${c}"><img src="icons/clock.svg" alt="" width="12px"/> ${hora}</div>
+                    <div id="local_${c}"><img src="icons/place.svg" alt="" width="12px"/></div> 
+                    <div id="preco_${c}"><img src="icons/money.svg" alt="" width="12px"/></div>
                   </div>
+                  
                   <div class="product_price">
                     <span>Produto</span>
                     <span>Preço</span>
                   </div>
+                  <hr>
                   <div class="value">
-                    <div id=produto_nome_${c} style = " display:flex; flex-direction: column">
-                      
-                    </div>
-                    <div id=produto_preco_${c} style = " display:flex; flex-direction: column">
-                      
-                    </div>
                   
+                    <div id=produto_nome_${c} style = " display:flex; flex-direction: column; justify-content: space-between;">
+                      
+                    </div>
+
+                    <div id=produto_preco_${c} style = " display:flex; flex-direction: column">
+                    
+                      
+                    </div>
                   </div>
                 </div>
               </div>
