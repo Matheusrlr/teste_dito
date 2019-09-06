@@ -97,7 +97,6 @@ $(document).ready(function (){
                     <span>Produto</span>
                     <span>Preço</span>
                   </div>
-                  <hr>
                   <div class="value">
                   
                     <div id=produto_nome_${c} style = " display:flex; flex-direction: column; justify-content: space-between;">

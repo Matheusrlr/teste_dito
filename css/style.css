@@ -10,6 +10,7 @@
     color: #606060;
     margin-bottom: 15px;
     background-color: #ffffff;
+    border-bottom: 1px solid #f3f3f3;
     
   }
   
@@ -22,6 +23,7 @@
     justify-content: space-between;
     color: #a3a3a3;
     background-color: #f8f8f8;
+    border-bottom: 1px solid #f3f3f3;
     
   }
   .value{
@@ -31,7 +33,7 @@
     font-family: Arial, sans-serif;
     color: #606060;
     background-color: #f8f8f8;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #f3f3f3;
     
     
   }
