@@ -7,8 +7,11 @@ Foi utilizado a biblioteca jQuery para realizar uma requisição HTTP com métod
 # Tecnologias utilizadas.
 
 Jquery
+
 Javascript
+
 CSS
+
 HTML
 
 
